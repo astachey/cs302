@@ -1,0 +1,22 @@
+DESCRIPTION: READ IN A DATA FILE USING A WHILE LOOP, COMPUTE THE TOTAL AMOUNT AN
+
+#include <iostream>
+#include <cstdlib>
+#include <iomanip>
+
+using namespace std;
+
+int main (){
+        string a;
+        float b, c;
+        float amount, total, famount;
+        while (cin>> a>> b>> c){
+                famount = b * c;
+                amount += b;
+                total += famount;
+        }
+        cout << "total amount = " <<amount<<endl;
+        cout << "total price = " << fixed << setprecision (2)<<total<<endl;
+
+        return 0;
+}
